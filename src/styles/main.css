@@ -74,19 +74,21 @@ img, picture, video, iframe, figure {
 h1 {
   margin: 0;
   font-size: 5rem;
+  font-weight: 100;
   font-family: var(--font-modak);
   line-height: 1;
 }
 
 h2 {
   margin: 0;
-  font-size: 6rem;
+  font-size: 4.2rem;
+  font-weight: 100;
   font-family: var(--font-modak);
 }
 
 h3 {
   margin: 0;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: var(--font-titan);
 }
 
@@ -172,7 +174,7 @@ video {
 
 .btn {
   border-radius: 10px;
-  padding: .5rem 2.5rem;
+  padding: .5rem 2rem;
   display: inline-block;
   font-weight: bold;
   text-align: center;
@@ -223,6 +225,10 @@ video {
   color: var(--first-color);
 }
 
+.txtbr {
+  color: var(--third-color);
+}
+
 .zind {
   z-index: 10;
 }
@@ -236,15 +242,18 @@ video {
   background-color: var(--first-color);
 }
 
+
 /*----------- STYLES ----------*/
 
 
 /*NavBar*/
 
 .header {
+  position: relative;
+  z-index: 10;
   height: 150px;
   width: 100%;
-  padding: 1rem 10rem;
+  padding: 1rem 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -253,7 +262,7 @@ video {
 }
 
 .navbar {
-  padding: 0 0 0 150px;
+  padding: 0 0 0 50px;
   flex: 1;
   display: flex;
   justify-content: space-around;
@@ -261,14 +270,20 @@ video {
 }
 
 .navbar__link {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   color: var(--third-color);
+  margin: auto -50px auto 50px;
+}
+
+.header__logo  {
+  border-color: var(--bg-color);
 }
 
 /*Inicio*/
 
 .inicio {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background: url(../imagenes/DEFINITIVEBG.svg);
@@ -277,11 +292,23 @@ video {
   background-repeat: no-repeat;
 }
 
-.ticket {
+.inicio::before {
   position: absolute;
+  content: '';
+  height: calc(100% - 150px);
+  width: 80px;
+  left: 145px;
+  bottom: 0;
+  background-color: var(--first-color);
+}
+
+.ticket {
   z-index: 1;
-  right: 5%;
-  top: -70px;
+  position: absolute;
+  top: -10%;
+  right: 10.5%;
+  max-height: unset;
+  max-height: 120%;
 }
 
 .inicio__contenidos {
@@ -295,18 +322,17 @@ video {
 }
 
 .inicio__info {
-  width: 39%;
+  width: 42%;
   margin: 0 150px 0 auto;
 }
 
 .inicio__titulo {
   line-height: 6rem;
-  font-weight: 100;
 }
 
 .inicio__parrafo {
   color: var(--third-color);
-  font-weight: 500;
+  font-weight: bolder;
   margin: 30px 0;
 }
 
@@ -323,9 +349,11 @@ video {
 }
 
 .inicio__boleto {
+  position: relative;
+  z-index: 1;
   width: 25%;
   height: 120%;
-  margin: 80px 80px 0 0;
+  margin: 40px 80px 0 0;
   overflow: hidden;
   border-radius: 20px;
   object-fit: contain;
@@ -339,5 +367,136 @@ video {
 
 .linea {
   width: 100%;
-  border: 3px solid var(--third-color);
+  border-top: 4px solid var(--third-color);
+}
+
+/*Cines*/
+
+.cines {
+  z-index: 2;
+  position: relative;
+  height: 90vh;
+}
+
+.cines::before {
+  position: absolute;
+  content: '';
+  height: 115%;
+  width: 80px;
+  left: 145px;
+  /* top: 0; */
+  background-color: var(--fourth-color);
+}
+
+.cines__titulo {
+  color: var(--white-color);
+  margin-left: 250px;
+}
+
+.cines__slider {
+  display: grid;
+  place-items: center;
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider__cine1 {
+  position: relative;
+  width: 98%;
+  height: 98%;
+  display: flex;
+}
+
+.cines__info {
+  z-index: 2;
+  width: 60%;
+  height: 85%;
+  padding: 10px 20px 20px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: flex-end;
+  background-color: var(--white-color);
+}
+
+.cines__btn {
+  width: 160px;
+}
+
+.cines__title {
+  margin: 20px 0;
+  line-height: 2.5rem;
+}
+
+.cines__parrafo {
+  margin: 20px 0;
+  line-height: 1.2rem;
+  font-weight: bolder;
+}
+
+.cines__slide {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  height: 100%; 
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cine__imgc {
+  height: 80%;
+  width: 100%;
+}
+
+.cine__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.cines__navigator {
+  width: 200px;
+  height: 70px;
+  align-self: flex-end;
+  background-color:aquamarine;
+}
+
+
+/*Biblioteca*/
+
+
+.biblioteca {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  padding: 100px 0 100px 150px;
+  background: url(../imagenes/mountainblack.svg);
+  background-size: cover;
+}
+
+.biblioteca::before {
+  z-index: 2;
+  position: absolute;
+  content: '';
+  height: 85%;
+  width: 80px;
+  left: 145px;
+  bottom: 0;
+  background-color: var(--first-color);
+}
+
+
+.biblioteca__title {
+  padding: 1rem 6rem;
+}
+
+.biblioteca__rolloContainer {
+  width: 100%;
+  height: 380px;
+  margin: 0;
+  background-color: var(--third-color);
 }
