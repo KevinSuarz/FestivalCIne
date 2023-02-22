@@ -107,7 +107,12 @@ h5 {
 
 h6 {
   margin: 0;
-  font-size: 0.7rem;
+  padding: 0;
+  font-size: 10rem;
+  font-weight: 100;
+  line-height: 1;
+  font-family: var(--font-modak);
+  color: var(--fourth-color);
 }
 
 a {
@@ -276,8 +281,8 @@ video {
   margin: auto -50px auto 50px;
 }
 
-.header__logo  {
-  border-color: var(--bg-color);
+.header__logo {
+  background-color: var(--bg-color);
 }
 
 /*Inicio*/
@@ -360,7 +365,7 @@ video {
   object-position: center;
 }
 
-.inicio__leon{
+.inicio__leon {
   height: 100%;
   object-fit: cover;
 }
@@ -440,7 +445,7 @@ video {
   position: absolute;
   z-index: 0;
   right: 0;
-  height: 100%; 
+  height: 100%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -462,7 +467,7 @@ video {
   width: 200px;
   height: 70px;
   align-self: flex-end;
-  background-color:aquamarine;
+  background-color: aquamarine;
 }
 
 
@@ -471,7 +476,7 @@ video {
 
 .biblioteca {
   position: relative;
-  height: 90vh;
+  height: 110vh;
   width: 100%;
   padding: 100px 0 100px 150px;
   background: url(../imagenes/mountainblack.svg);
@@ -482,10 +487,10 @@ video {
   z-index: 2;
   position: absolute;
   content: '';
-  height: 85%;
+  height: 82%;
   width: 80px;
   left: 145px;
-  bottom: 0;
+  top: 80px;
   background-color: var(--first-color);
 }
 
@@ -498,5 +503,42 @@ video {
   width: 100%;
   height: 380px;
   margin: 0;
+  background-color: var(--third-color);
+}
+
+
+
+/*Video*/
+
+
+.video {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textanimate {
+  transform: translateX(-100px);
+}
+
+.video__video {
+  width: 100%;
+  height: 200px;
+}
+
+.video__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 30%;
+}
+
+
+/*Footer*/
+
+
+.footer {
   background-color: var(--third-color);
 }
