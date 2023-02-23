@@ -8,24 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Modak&family=Titan+One&display=swap" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/ee9a0937c2.js" crossorigin="anonymous"></script>
-
 
     <title>El Cine que Tú Eliges</title>
 </head>
 <body>
+  
   <section class="inicio" id="inicio">
     <img src="src/imagenes/ticketbginicio.svg" alt="" class="ticket">f
 
-    <header class="header">
+    <header class="header" id="header">
         <img src="src/imagenes/logo.svg" alt="El cine que tu eliges" class="header__logo">
         <nav class="navbar">
-            <li class="navbar__link"><a href="index.html/#inicio">INICIO</a></li>
-            <li class="navbar__link">BOLETOS</li>
-            <li class="navbar__link">INFORMACIÓN</li>
-            <li class="navbar__link btn">TÚ ELIGES</li>
-            <li class="navbar__link btn">SORTEO</li>
+            <a href="#header" class="navbar__link">INICIO</a>
+            <a class="navbar__link">BOLETOS</a>
+            <a class="navbar__link">INFORMACIÓN</a>
+            <a class="navbar__link btn">TÚ ELIGES</a>
+            <a class="navbar__link btn" href="src/pages/sorteo.html">SORTEO</a>
         </nav>
         <li class="navbar__link btn--circle btn"><img src="src/imagenes/phone.png" alt="número de contacto"></li>
     </header>
@@ -122,5 +121,6 @@
       <p class="txtw">FAQ derecho de privacidad y cookies</b></p>
     </div>
   </footer>
+
 </body>
 </html>
