@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../styles/informacion--styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Modak&family=Titan+One&display=swap" rel="stylesheet">
 
+
+
+
+
 </head> 
 <body>
     <header class="header sorteo__header">
@@ -29,7 +33,7 @@
         <div class="informacion__mapa">
             <h1 class="txtw">INFORMACION</h1>
 
-            <img src="../imagenes/mapavitoria.png" alt="" class="informacion__mapaimg">
+            <img src="../imagenes/mapafestival.png" usemap="#image-map" class="informacion__mapaimg">
 
             <div class="informacion__cines">
                 <div class="informacion__cine">
@@ -59,15 +63,16 @@
             <table class="tabla">
                 <tr class="tabla-cabecera">
                     <th class="imagen"> 
-                        <img src="../imagenes/logo.svg">
+                        <img src="../imagenes/logo.svg" class="tabla__img">
                     </th>
-                    <th class="imagen" colspan="5"><h2>CARTELERA DE FUNCIONES EN MARZO</h2>
+                    <th class="imagen" colspan="5"><h2 class="tabla__title">CARTELERA DE FUNCIONES EN MARZO</h2>
                     </th>
                 </tr>
+            </table>
     <!--seccion1-->
-                
-                <tr class="fondo">
-                   <td rowspan="5" colspan="2">Cine yelmo boulevard</td>
+                <table class="rectangulo">
+                <tr>
+                   <td class="t" rowspan="5" colspan="2">Cine yelmo boulevard</td>
                    <td colspan="2">Viernes 04</td>
                    <td>22h</td>
                     <td colspan="1">Película 1</td>
@@ -91,11 +96,11 @@
                     <td>20h</td>
                     <td>Película 17</td>
                 </tr>
-                
+                </table>
      <!--seccion2-->
-                 
+                 <table class="rectangulo">
                 <tr>
-                    <td rowspan="5" colspan="2">Cine florida</td>
+                    <td class="t" rowspan="5" colspan="2">Cine florida</td>
                     <td colspan="2">Viernes 04</td>
                     <td>22h</td>
                     <td colspan="1">Película 1</td>
@@ -119,10 +124,11 @@
                     <td>20h</td>
                     <td>Película 17</td>
                 </tr>
-               
+               </table>
     <!--seccion3-->
+                 <table class="rectangulo">
                  <tr>
-                    <td rowspan="5" colspan="2">cines gorbeia zinemak</td>
+                    <td class="t" rowspan="5" colspan="2">cines gorbeia zinemak</td>
                     <td colspan="2">Viernes 04</td>
                     <td>22h</td>
                     <td colspan="1">Película 1</td>
@@ -146,10 +152,11 @@
                     <td>20h</td>
                     <td>Película 17</td>
                 </tr>
-              
+                </table>
     <!--seccion4-->
+                <table class="rectangulo">
                <tr>
-                    <td rowspan="5" colspan="2">Teatro ortzai antzokia</td>
+                    <td class="t" rowspan="5" colspan="2">Teatro ortzai antzokia</td>
                     <td colspan="2">Viernes 04</td>
                     <td>22h</td>
                     <td colspan="1">Película 1</td>
@@ -173,9 +180,16 @@
                     <td>20h</td>
                     <td>Película 17</td>
                 </tr>
-            </table>
+                </table>
         </div>
     </section>
+
+    <map name="image-map">
+        <area target="_blank" alt="Cine Gorbeia Zinemak" title="Cine Gorbeia Zinemak" href="https://www.google.com/maps/place/Cines+Gorbeia+Zinemak/@42.9120729,-2.7195487,17z/data=!3m1!4b1!4m6!3m5!1s0xd4fc6b59b5ed2f5:0x614513c680c0fcd!8m2!3d42.9120729!4d-2.71736!16s%2Fg%2F11f03lsl1b" coords="155,18,17" shape="circle">
+        <area target="_blank" alt="Cine Florida" title="Cine Florida" href="https://www.google.com/maps/place/Cines+Florida/@42.8403833,-2.6791454,14.92z/data=!3m1!5s0xd4fc26e48f90165:0xd6c9407ea9308c98!4m6!3m5!1s0xd4fc26e70d42445:0x60afc9d82a3a93cc!8m2!3d42.84383!4d-2.6710165!16s%2Fg%2F1tfm2s1y" coords="453,627,14" shape="circle">
+        <area target="_blank" alt="Teatro Ortzai Antzokia" title="Teatro Ortzai Antzokia" href="https://www.google.com/maps/place/Ortzai/@42.8501477,-2.673294,17z/data=!3m1!4b1!4m6!3m5!1s0xd4fc269aced4abb:0xbe67446d757433fc!8m2!3d42.8501477!4d-2.6711053!16s%2Fg%2F11xg9cf3v" coords="453,567,16" shape="circle">
+        <area target="_blank" alt="Cine Yelmo Boulevard" title="Cine Yelmo Boulevard" href="https://www.google.com/maps/place/Cine+Yelmo+Boulevard/@42.8623749,-2.6721762,17z/data=!3m2!4b1!5s0xd4fc2500767adc9:0x7edf0a3a496beb95!4m6!3m5!1s0xd4fc24554e93147:0x67b3ef83eaf71ed7!8m2!3d42.8623749!4d-2.6699875!16s%2Fg%2F12q4pz4d1" coords="466,456,16" shape="circle">
+    </map>
 
 </body>
 </html>

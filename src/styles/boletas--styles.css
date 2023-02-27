@@ -133,12 +133,12 @@ body{
 
 .boletos__header {
     width: 80%;
-    height: 30%;
+    height: 35%;
 }
 
 .boletos__body {
-    height: 70%;
-    width: 80%;
+    height: 60%;
+    width: 70%;
     display: flex;
 }
 
@@ -201,7 +201,202 @@ body{
     margin: auto;
 }
 
-.boletos__pago {
-    width: 50%;
-    height: 100%;
+
+/* TITLE */
+
+.boletos__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
+
+.selection {
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-family: var(--font-alegreya);
+  font-weight: 700;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  box-shadow: 10px 10px var(--black-color);
+}
+
+
+.boletos__funciones{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.horario-contenedor{
+  width: 140px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid 1px grey;
+  box-shadow: 10px 10px;
+  margin: 0;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.horario-contenedor:hover .pelicula{
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+
+.horario-contenedor:hover{
+  transform: translateY(10px) translateX(10px);
+  box-shadow: unset;
+}
+
+.hora{
+  background-color: #ffe200;
+  width: 100%;
+  padding: 10px;
+  font-family: var(--font-titan);
+  font-size: 16px;
+  color: var(--first-color);
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.pelicula{
+  background-color: white;
+  width: 140px;
+  height: 50px;
+  font-family: var(--font-alegreya);
+  font-size: 26px;
+  color: var(--third-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* FORMULARIO */
+
+
+.boletos__pago {
+  width: 50%;
+  height: 100%;
+  padding: 20px 0 20px 60px;
+}
+
+.form-pago {
+  height: 85%;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  box-shadow: 10px 10px var(--black-color);
+  border-radius: 10px ;
+  border: 1px solid var(--fourth-color);
+}
+
+.email {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 5px lightgray;
+  padding: 0 10px;
+}
+
+.pago__title {
+  display: block;
+
+}
+
+.metodos-pago {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.metodo {
+  width: 46%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 5px lightgray;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+}
+
+.master {
+  height: 18px;
+  margin: 0 5px;
+}
+
+.paga__tarje {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 5px lightgray;
+  background-color: rgb(238, 238, 238);
+}
+
+.metodo__title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.numero {
+  font-size: .9rem;
+}
+
+.pago__validez {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+.tabla{
+  width: 40%;
+  background-color:  #D41F1C;
+  border-collapse: collapse;
+  border: solid 4px black;
+}
+th,img{
+  text-align:  right;
+  width: 50px;
+  height: 50px;
+}
+
+h2{
+  text-align: left;
+}
+td, th{
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+}
+.imagen{
+  border: none;
+}
+
+.tabla-cabecera{
+  background-color: black;
+}
+.rectangulo{
+  background-image: linear-gradient(#D41F1C, #391212);
+  width: 40%;
+  border: solid 3px black;
+  border-collapse: collapse;
+}
+.t{
+  width: 40%;
+} 

@@ -398,20 +398,59 @@ video {
 }
 
 .cines__slider {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   height: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.slider__cine1 {
+.slider__cine {
   position: relative;
   width: 98%;
   height: 98%;
   display: flex;
+  margin: 1%;
 }
+
+.slider__container {
+  width: 400%;
+  height: 100%;
+  animation: cines 40s linear infinite;
+}
+
+@keyframes cines {
+  0%{
+    transform: translateY(0);
+  }
+  24%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(-100%);
+  }
+  49%{
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(-200%);
+  }
+  74%{
+    transform: translateY(-200%);
+  }
+  75%{
+    transform: translateY(-300%);
+  }
+  99%{
+    transform: translateY(-300%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
 
 .cines__info {
   z-index: 2;
@@ -597,6 +636,12 @@ video {
   object-position: 0 30%;
 }
 
+.video__video video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 30%;
+}
 
 @keyframes slide {
   0% {

@@ -201,33 +201,42 @@ body{
     padding: 40px;
 }
 
-.tabla {
-    width: 100%;
-    height: 100%;
-    border-collapse: collapse;
-    background-color: var(--first-color);
-    border: solid 4px black;
+.tabla{
+  width: 100%;
+  background-color:  #D41F1C;
+  border-collapse: collapse;
+  border: solid 4px black;
+  padding: 10px;
 }
 
-
-th{
-    text-align:  right;
-    width: 50px;
-    height: 50px;
-}
-
-h2{
-    text-align: center;
-    font-size: 1rem;
-}
 td, th{
-    border: 2px solid white;
-    text-align: center;
-    color: white;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
 }
-.fondo{
-    background-color:   #D41F1C;
+.imagen{
+  border: none;
 }
+
 .tabla-cabecera{
-    background-color: black;
+  background-color: black;
+}
+.rectangulo{
+  background-image: linear-gradient(#D41F1C, #391212);
+  width: 100%;
+  border: solid 3px black;
+  border-collapse: collapse;
+}
+.t{
+  width: 40%;
+}
+
+.tabla__title {
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: var(--font-titan);
+}
+
+.tabla__img {
+  width: 80px;
 }

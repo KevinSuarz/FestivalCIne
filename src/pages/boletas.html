@@ -28,9 +28,41 @@
 
     <section class="boletos">
         <div class="boletos__header">
-
+            <div class="boletos__title">
+                <div class="menu-desplegable">
+                    <form action="/action_page.php">
+                        <select name="cine" id="cines" class="selection">
+                            <option value="edge">CINES</option>
+                            <option value="Yelmo Boulevard">Yelmo Boulevard</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Gorbeia Zinemak">Gorbeia Zinemak</option>
+                            <option value="Teatro Ortzai Antzokia">Teatro Ortzai Antzokia</option>
+                        </select>
+                    </form>
+                </div>
+                <h1 class="txtr">BOLETOS</h1>
+            </div>
             <div class="boletos__funciones">
-
+                <div class=" horario-contenedor">
+                    <p class="hora"> 04/03     22:00</p>
+                    <p class="pelicula"> Película 01</p>
+                </div>
+                <div class=" horario-contenedor">
+                    <p class="hora"> 04/03     22:00</p>
+                    <p class="pelicula"> Película 05</p>
+                </div>
+                <div class=" horario-contenedor">
+                    <p class="hora"> 04/03     22:00</p>
+                    <p class="pelicula"> Película 09</p>
+                </div>
+                <div class=" horario-contenedor">
+                    <p class="hora"> 04/03     22:00</p>
+                    <p class="pelicula"> Película 13</p>
+                </div>
+                <div class=" horario-contenedor">
+                    <p class="hora"> 04/03     22:00</p>
+                    <p class="pelicula"> Película 17</p>
+                </div>
             </div>
         </div>
         <div class="boletos__body">
@@ -344,7 +376,72 @@
 
             </div>
             <div class="boletos__pago">
-
+                <form class="form-pago">
+                    <div class="pago-form">
+                        <label for="email"> Direccion de Email*</label><br>
+                        <input type="text" name="email" id="Mes" size="70px" class="email" placeholder=" Introduce tu correo electronico">
+                        <label for="metodo de pago" class="pago__title"> Metodo de Pago</label>
+                        <div class="metodos-pago">
+                            <div class="visa metodo">
+                                <input type="checkbox">
+                                <img src="../imagenes/visa 1.jpg" alt="" class="master">
+                                <img src="../imagenes/Mastercard-logo 1.jpg" alt="" class="master">
+                                <img src="../imagenes/american-express 1.jpg" alt="" class="master">
+                            </div>
+                            <div class="paypal metodo">
+                                <input type="checkbox">
+                                <img src="../imagenes/paypal.png" alt="" class="master">
+                            </div>
+                        </div>
+                    </div>                       
+                    <div class="paga__tarje">
+                        <p class="metodo__title"> Pagar con tárjeta de crédito</p>
+                        <label for="text" class="numero"><strong> Número de tarjeta de crédito*</strong></label>
+                        <input class="email" type="text" id="Mes" size="40px" name="text" placeholder="Introducir número de la tarjeta de crédito">
+                        <div class="pago__validez">
+                            <div>
+                                <label for="text" class="numero"><strong>Validez*</strong></label><br>
+                                <select name="Mes" id="Mes" class="email">
+                                    <option value="Mes">Mes</option>
+                                    <option value="enero">Enero</option>
+                                    <option value="Febrero">Febrero</option>
+                                    <option value="Marzo">Marzo</option>
+                                    <option value="Abril">Abril</option>
+                                    <option value="Mayo">Mayo</option>
+                                    <option value="Junio">Junio</option>
+                                    <option value="Julio">Julio</option>
+                                    <option value="Agosto">Agosto</option>
+                                    <option value="Septiembre">Septiembre</option>
+                                    <option value="Octubre">Octubre</option>
+                                    <option value="Noviembre">Noviembre</option>
+                                    <option value="Diciembre">Diciembre</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="text"></label><br>
+                                <select name="Año" id="Mes" class="email">
+                                    <option value="Año">Año</option>
+                                    <option value="enero">2023</option>
+                                    <option value="Febrero">2022</option>
+                                    <option value="Marzo">2021</option>
+                                    <option value="Abril">2020</option>
+                                    <option value="Mayo">2019</option>
+                                    <option value="Junio">2018</option>
+                                    <option value="Julio">2017</option>
+                                    <option value="Agosto">2016</option>
+                                    <option value="Septiembre">2015</option>
+                                    <option value="Octubre">2014</option>
+                                    <option value="Noviembre">2013</option>
+                                    <option value="Diciembre">2012</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="text" class="numero"><strong> CVV*</strong></label><br>
+                                <input type="text" name="" id="Mes" size="20px" placeholder="cvv" class="email">
+                            </div>
+                        </div>
+                    </div>        
+                </form>
             </div>
         </div> 
     </section>
