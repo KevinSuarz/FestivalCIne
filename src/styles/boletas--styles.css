@@ -364,39 +364,3 @@ body{
 
 
 
-.tabla{
-  width: 40%;
-  background-color:  #D41F1C;
-  border-collapse: collapse;
-  border: solid 4px black;
-}
-th,img{
-  text-align:  right;
-  width: 50px;
-  height: 50px;
-}
-
-h2{
-  text-align: left;
-}
-td, th{
-  border: 2px solid white;
-  text-align: center;
-  color: white;
-}
-.imagen{
-  border: none;
-}
-
-.tabla-cabecera{
-  background-color: black;
-}
-.rectangulo{
-  background-image: linear-gradient(#D41F1C, #391212);
-  width: 40%;
-  border: solid 3px black;
-  border-collapse: collapse;
-}
-.t{
-  width: 40%;
-} 

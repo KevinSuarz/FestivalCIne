@@ -185,7 +185,7 @@ body{
 
 .feed {
     flex: 4;
-    height:420vh;
+    height: fit-content;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -193,8 +193,8 @@ body{
     align-items: center;
     background-color: var(--third-color);
     background: url(../imagenes/fondofeed.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size: contain;
 }
 
 .feed__publish {
@@ -259,6 +259,20 @@ body{
 .publish__foot i{
     font-size: 2rem;
     margin: 0 10px;
+}
+
+.like {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: var(--fourth-color);
+  position: relative;
+  clip-path: polygon(5% 37%, 12% 19%, 31% 11%, 50% 25%, 66% 12%, 87% 17%, 93% 38%, 81% 63%, 63% 76%, 50% 92%, 35% 77%, 17% 63%);
+}
+
+
+.like:checked{
+  background-color: red;
 }
 
 .leaderboard {
